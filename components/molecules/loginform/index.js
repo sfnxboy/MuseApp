@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+
+// Components
 import InputField from '../../atoms/inputfield';
 import InputFieldLabel from '../../atoms/inputfieldlabel';
 import GenericButton from "../../atoms/genericbutton";

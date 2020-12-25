@@ -9,7 +9,7 @@ import store from "./store";
 
 // Components
 import Login from './screens/login';
-//import register from './screens/register';
+import Dashboard from './screens/dashboard';
 
 const Stack = createStackNavigator();
 
