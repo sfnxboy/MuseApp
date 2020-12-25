@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, Text, SafeAreaView, Image} from 'react-native';
-import Logo from '../../assets/images/musePurple.png';
+import Logo from '../../assets/images/museYellow.png';
 
 // Components
+import LoginForm from '../../components/molecules/loginform';
 
 const Login = ({navigation}) => {
     return (
@@ -16,12 +17,10 @@ const Login = ({navigation}) => {
                 </View>
                 <View style={styles.headerContainer}>
                     <Text style={styles.headerText}>
-                        LOGIN
+                        Welcome Back!
                     </Text>
                 </View>
-                <View style={styles.formContainer}>
-
-                </View>
+                <LoginForm navigation={navigation} />
                 <View style={styles.buttonContainer}>
                 
                 </View>
