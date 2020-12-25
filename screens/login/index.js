@@ -4,6 +4,7 @@ import Logo from '../../assets/images/museYellow.png';
 
 // Components
 import LoginForm from '../../components/molecules/loginform';
+import HyperLinkText from '../../components/atoms/hyperlinktext';
 
 const Login = ({navigation}) => {
     return (
@@ -21,8 +22,21 @@ const Login = ({navigation}) => {
                     </Text>
                 </View>
                 <LoginForm navigation={navigation} />
-                <View style={styles.buttonContainer}>
-                
+                <View style={styles.hyperLinkTextContainer}>
+                    <HyperLinkText
+                        message={"Don't have an account? Create it"}
+                        screen={"Register"}
+                        linkMessage={"Here"}
+                        navigation={navigation}
+                    />
+                </View>
+                <View style={styles.hyperLinkTextContainer}>
+                    <HyperLinkText
+                        message={"Forgot your information? Reset it"}
+                        screen={"Recover"}
+                        linkMessage={"Here"}
+                        navigation={navigation}
+                    />
                 </View>
             </View>
         </SafeAreaView>
@@ -40,12 +54,15 @@ const styles = StyleSheet.create({
         width:  220
     },
     headerContainer: {
-        marginTop: 80
+        marginTop: 60
     },
     headerText: {
         fontSize:26,
         fontWeight: "700",
         color: "#ffffff"
+    },
+    hyperLinkTextContainer: {
+        marginTop: 20
     }
 });
 

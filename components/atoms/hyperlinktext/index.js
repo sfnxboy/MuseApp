@@ -13,12 +13,17 @@ const HyperLinkText = (props) => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "#cae1e7",
+        backgroundColor: "#120A23",
+        borderColor: "#301E48",
+        borderWidth: 1,
+        borderRadius: 5,
         paddingTop:10,
-        paddingBottom: 10
+        paddingBottom: 10,
+        paddingRight: 10,
+        width: 300
     },
     text: {
-        color: "#592cba",
+        color: "#BAA8FF",
         paddingLeft: 10,
     },
     highlight: {

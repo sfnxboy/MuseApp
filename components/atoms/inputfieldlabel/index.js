@@ -10,8 +10,9 @@ const InputFieldLabel = (props) => {
 const styles = StyleSheet.create({
     label: {
         alignSelf: "flex-start",
-        color: "#300076",
+        color: "#FFFFFF",
         fontWeight: "700",
+        fontSize: 16
     }
 });
 

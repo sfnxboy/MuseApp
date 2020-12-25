@@ -9,16 +9,17 @@ const GenericButton = (props) => {
                 width: 300,
                 height: 40,
                 justifyContent:"center",
-                alignContent:"center"
+                alignContent:"center",
+                borderRadius: 5
             }}
         >
             <Text 
                 style={{
                     color: props.textColor, 
                     textAlign: "center", 
-                    fontSize: 18,
+                    fontSize: 16,
                     fontWeight: "700",
-                    letterSpacing: "1"
+                    letterSpacing: 1
                 }}
             >
             {props.message}</Text>

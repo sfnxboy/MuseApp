@@ -23,7 +23,6 @@ const LoginForm = (props) => {
     }
 
     const handleLogin = () => {
-        console.log(email + " " + password);
         props.navigation.navigate("Dashboard");
     }
 
@@ -37,8 +36,13 @@ const LoginForm = (props) => {
     }
 
     return (
-        <View>
-            <View>
+        <View style={styles.mainContainer}>
+            <View style={styles.label}>
+                <InputFieldLabel
+                    text={"Email Address"}
+                />
+            </View>
+            <View style={styles.input}>
                 <InputField
                     placeholder={"Email Address"}
                     value={email}
@@ -46,7 +50,12 @@ const LoginForm = (props) => {
                     secure={false}
                 />
             </View>
-            <View>
+            <View style={styles.label}>
+                <InputFieldLabel
+                    text={"Password"}
+                />
+            </View>
+            <View style={styles.input}>
                 <InputField
                     placeholder={"Password"}
                     value={password}
@@ -54,7 +63,7 @@ const LoginForm = (props) => {
                     secure={true}
                 />
             </View>
-            <View>
+            <View style={styles.button}>
                 <GenericButton
                     message={"LOGIN"}
                     action={validation}
@@ -65,5 +74,20 @@ const LoginForm = (props) => {
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    mainContainer: {
+        marginTop:60
+    },
+    label: {
+        marginBottom: 10
+    },
+    input: {
+        marginBottom: 30
+    },
+    button: {
+        marginTop: 0
+    }
+});
 
 export default LoginForm;
