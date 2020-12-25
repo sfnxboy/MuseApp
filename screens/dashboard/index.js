@@ -1,10 +1,12 @@
 import React from 'react';
 import { View, StyleSheet, Text, SafeAreaView, Image} from 'react-native';
+
+
 const Dashboard = () => {
     return (
         <SafeAreaView style={{flex: 1, backgroundColor: "#0B0518"}}>
             <View style={styles.mainContainer}>
-
+                
 
             </View>
         </SafeAreaView>
