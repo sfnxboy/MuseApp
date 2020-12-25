@@ -1,12 +1,13 @@
 import React from 'react';
 import { View, StyleSheet, Text, SafeAreaView, Image} from 'react-native';
 
+import HeaderNav from '../../components/molecules/headernav';
 
 const Dashboard = () => {
     return (
         <SafeAreaView style={{flex: 1, backgroundColor: "#0B0518"}}>
             <View style={styles.mainContainer}>
-                
+                <HeaderNav />
 
             </View>
         </SafeAreaView>

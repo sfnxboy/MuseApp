@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import axios from 'axios';
+import {localip} from '../../../env';
 
 // Components
 import InputField from '../../atoms/inputfield';
@@ -26,7 +27,7 @@ const LoginForm = (props) => {
     }
 
     const handleLogin = () => {
-        axios.post("http://192.168.1.194:19005/login", {
+        axios.post(`${localip}/login`, {
             email: email,
             pw: password
         })
