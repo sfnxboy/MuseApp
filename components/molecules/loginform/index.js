@@ -65,9 +65,9 @@ const LoginForm = (props) => {
             </View>
             <View style={styles.button}>
                 <GenericButton
-                    message={"LOGIN"}
+                    message={"Login"}
                     action={validation}
-                    textColor={"#000000"}
+                    textColor={"#0B0518"}
                     color={"#fefe00"}
                 />
             </View>

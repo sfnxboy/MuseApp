@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         color: "#ffffff"
     },
     hyperLinkTextContainer: {
-        marginTop: 20
+        marginTop: 30
     }
 });
 
