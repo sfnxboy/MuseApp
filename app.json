@@ -1,0 +1,12 @@
+{
+  "name": "Muse",
+  "displayName": "Muse",
+  "expo": {
+    "name": "Muse",
+    "slug": "Muse",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
