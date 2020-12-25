@@ -26,13 +26,13 @@ const LoginForm = (props) => {
     }
 
     const handleLogin = () => {
-        axios.post("http://192.168.1.194:19005/signup", {
+        axios.post("http://192.168.1.194:19005/login", {
             email: email,
             pw: password
         })
         .then(res =>{
             if(res.status === 200) {
-                props.navigation.navigate("LinkSent");
+                props.navigation.navigate("Dashboard");
             }
             else {
                 setError(true);

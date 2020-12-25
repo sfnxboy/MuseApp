@@ -21,10 +21,10 @@ export default function App() {
           screenOptions={{
             headerShown: false
           }}
-          initialRouteName="Login"
+          initialRouteName="Dashboard"
         >
         <Stack.Screen name="Login" component={Login} />
-        
+        <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
