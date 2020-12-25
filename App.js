@@ -1,13 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
+// Dependencies
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from "@react-navigation/stack";
+import 'react-native-gesture-handler';
+import { Provider } from 'react-redux';
+import store from "./store";
+
+// Components
+import Login from './screens/login';
+//import register from './screens/register';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator
+          screenOptions={{
+            headerShown: false
+          }}
+          initialRouteName="Login"
+        >
+        <Stack.Screen name="Login" component={Login} />
+        
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
   );
 }
 
