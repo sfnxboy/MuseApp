@@ -32,6 +32,7 @@ const EncounterTray = (props) => {
                 keyExtractor={(encounter) => String(encounter.id)}
                 initialScrollIndex={0}
                 removeClippedSubviews={false}
+                showsHorizontalScrollIndicator={false}
                 ListEmptyComponent={
                     <View style={styles.posContainer}>
                         <Text style={styles.emptyList}>No one yet</Text>
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
         alignItems: "center", 
         justifyContent: "center",
         height: 50,
-        marginBottom: 20
+        marginBottom: 20,
     },
     posContainer: {
         alignSelf: "stretch",

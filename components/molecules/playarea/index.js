@@ -10,11 +10,11 @@ const PlayArea = (props) => {
             <View style={styles.textContainer}>
                 <Text style={styles.upperText}>Encountered</Text>
             </View>
+            
             <EncounterTray 
                 selected={props.selected} 
                 setSelected={props.setSelected}
             />
-
             <View style={styles.textContainer}>
                 <Text style={styles.text}>Currently Playing</Text>
             </View>
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         width: "90%",
         justifyContent: "center",
         marginBottom: 20,
-    },
+    },  
     textContainer: {
         marginBottom: 10
     },

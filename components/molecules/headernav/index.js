@@ -6,7 +6,7 @@ import MiniProfile from '../../atoms/miniprofile';
 
 const HeaderNav = (props) => {
     return (
-        <View style={styles.mainContainer}>
+        <View style={styles.mainContainer}> 
                 <SectionHeader text={props.text} />
                 <MiniProfile />
         </View>
