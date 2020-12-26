@@ -1,12 +1,32 @@
 {
-  "name": "Muse",
-  "displayName": "Muse",
   "expo": {
-    "name": "Muse",
-    "slug": "Muse",
+    "name": "fascinated-croissant",
+    "slug": "snack-be83c8e2-6b62-45c3-83b7-6365014df083",
     "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
   }
 }
