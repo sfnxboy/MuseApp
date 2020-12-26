@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
 import SectionHeader from '../../atoms/sectionheader';
+import MiniProfile from '../../atoms/miniprofile';
 
 const HeaderNav = (props) => {
     return (
         <View style={styles.mainContainer}>
-            <SectionHeader text={"Hi Patryck!"} />
-            
+                <SectionHeader text={props.text} />
+                <MiniProfile />
         </View>
     )
 };
@@ -15,9 +16,12 @@ const HeaderNav = (props) => {
 const styles = StyleSheet.create({
     mainContainer: {
         flexDirection: "row",
-        justifyContent: "space-between",
-        alignSelf: "stretch"
-    }
+        justifyContent: "center",
+        alignSelf: "stretch",
+        alignContent: "center",
+        alignItems: "center",
+        height: 50
+    },
 });
 
 export default HeaderNav;
