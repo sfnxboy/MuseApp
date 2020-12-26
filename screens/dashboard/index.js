@@ -6,7 +6,8 @@ import PlayArea from '../../components/molecules/playarea';
 
 const Dashboard = () => {
     const [target, setTarget] = useState("");
-    const [active, setActive] = useState(false)
+    const [active, setActive] = useState(false);
+    const [selected, setSelected] = useState("");
 
     return (
         <SafeAreaView style={{flex: 1, backgroundColor: "#0B0518", height: "100%"}}>
@@ -20,6 +21,8 @@ const Dashboard = () => {
                 <View style={styles.footerContainer}>
                     <PlayArea
                         status={active}
+                        selected={selected}
+                        setSelected={setSelected}
                     />
                 </View>
             </View>

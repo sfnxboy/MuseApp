@@ -2,13 +2,21 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
 import SongBlock from '../../atoms/songblock';
+import EncounterTray from '../../atoms/encountertray';
 
-const PlayArea = () => {
-
+const PlayArea = (props) => {
     return (
         <View style={styles.mainContainer}>
             <View style={styles.textContainer}>
-                <Text style={styles.text}>CURRENTLY PLAYING</Text>
+                <Text style={styles.upperText}>Encountered</Text>
+            </View>
+            <EncounterTray 
+                selected={props.selected} 
+                setSelected={props.setSelected}
+            />
+
+            <View style={styles.textContainer}>
+                <Text style={styles.text}>Currently Playing</Text>
             </View>
             <SongBlock />
         </View>
@@ -29,6 +37,12 @@ const styles = StyleSheet.create({
         fontWeight: "600",
         color: "#BAA8FF",
         textAlign: "center"
+    },
+    upperText: {
+        fontSize: 12,
+        fontWeight: "600",
+        color: "#BAA8FF",
+        textAlign: "left"
     }
 });
 
