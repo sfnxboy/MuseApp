@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import { View, StyleSheet, Text, SafeAreaView, Image} from 'react-native';
 
 import HeaderNav from '../../components/molecules/headernav';
+import Events from '../../components/molecules/events';
+import LocalTray from '../../components/molecules/localtray';
 import PlayArea from '../../components/molecules/playarea';
 
 const Dashboard = () => {
@@ -17,7 +19,14 @@ const Dashboard = () => {
                     target={target} 
                     setTarget={setTarget} 
                 />
-
+                <Events
+                    selected={selected}
+                    setSelected={setSelected}
+                />
+                <LocalTray
+                    selected={selected}
+                    setSelected={setSelected}
+                />
                 <View style={styles.footerContainer}>
                     <PlayArea
                         status={active}

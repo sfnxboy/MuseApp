@@ -20,6 +20,9 @@ const MiniProfile = (props) => {
                     <TouchableOpacity>
                         <Text style={styles.dropdowntext}>Settings</Text>
                     </TouchableOpacity>
+                    <TouchableOpacity>
+                        <Text style={styles.dropdowntext}>Log out</Text>
+                    </TouchableOpacity>
                 </View>
             );
     };
@@ -45,7 +48,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignSelf: "stretch",
         position: "absolute",
-        left: 300
+        left: 340
     },
     photoContainer: {
         backgroundColor: "#150E39",

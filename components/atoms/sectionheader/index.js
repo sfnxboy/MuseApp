@@ -11,14 +11,13 @@ const SectionHeader = (props) => {
 
 const styles = StyleSheet.create({
     textContainer: {
-        backgroundColor: "#150E39",
-        borderColor: "#44329F",
-        borderWidth: 1,
+        backgroundColor: "#4a3ddb",
         height: 40,
         padding: 10,
+        borderRadius: 5
     },
     text: {
-        color: "#BAA8FF",
+        color: "#FFFFFF",
         fontSize: 14,
         fontWeight: "700"
     }
